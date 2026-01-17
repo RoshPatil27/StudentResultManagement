@@ -14,3 +14,6 @@ client.server_info()
 
 db = client[DATABASE_NAME]
 result_collection = db["results"]
+student_collection = db["students"]
+teacher_collection = db["teachers"]
+admin_collection = db["admins"]

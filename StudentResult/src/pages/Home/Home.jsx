@@ -8,6 +8,11 @@ import {
   Button,
   ResultBox,
 } from "./Home.styles";
+import Header from "../../components/Header/Header";
+import Navbar from "../../components/Navbar/Navbar";
+import About from "../About/About";
+import Contact from "../Contact/Contact";
+import Footer from "../../components/Footer/Footer";
 
 export default function Home() {
   const [name, setName] = useState("");
@@ -34,6 +39,8 @@ export default function Home() {
 
   return (
     <>
+          <Header />
+          <Navbar />
       {/* Hero Section */}
       <HeroSection>
         <HeroTitle>Calculate Student Results Instantly</HeroTitle>
@@ -76,6 +83,11 @@ export default function Home() {
           </ResultBox>
         )}
       </FormSection>
+
+            <About />
+      <Contact />
+
+      <Footer />
     </>
   );
 }
